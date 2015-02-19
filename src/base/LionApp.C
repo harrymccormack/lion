@@ -28,6 +28,7 @@ LionApp::~LionApp()
 {
 }
 
+extern "C" void LionApp__registerApps() { LionApp::registerApps(); }
 void
 LionApp::registerApps()
 {
