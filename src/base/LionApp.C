@@ -10,10 +10,9 @@ InputParameters validParams<LionApp>()
   return params;
 }
 
-LionApp::LionApp(const std::string & name, InputParameters parameters) :
-    MooseApp(name, parameters)
+LionApp::LionApp(InputParameters parameters) :
+    MooseApp(parameters)
 {
-  srand(processor_id());
 
   Moose::registerObjects(_factory);
   ModulesApp::registerObjects(_factory);

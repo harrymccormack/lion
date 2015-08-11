@@ -11,7 +11,7 @@ InputParameters validParams<LionApp>();
 class LionApp : public MooseApp
 {
 public:
-  LionApp(const std::string & name, InputParameters parameters);
+  LionApp(InputParameters parameters);
   virtual ~LionApp();
 
   static void registerApps();
